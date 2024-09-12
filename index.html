@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        #conteiner{
+            height: 500px;
+            border: dashed 3px red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            border: solid 3px blue;
+        }
+        .item.um{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #atividade{
+            border: solid 5px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 800px;
+            margin: 30px;
+           
+        }
+
+        .pai{
+            border: dashed 3px blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            height: 90%;
+            width: 45%;
+        }
+        .pai.es{
+            flex-direction: column;
+        }
+
+        .filho{
+            border: solid 3px green;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item um">item1</div>
+        <div class="item dois">item2</div>
+        <div class="item tres">item3</div>
+    </div>
+    <div id="atividade">
+        <div class="pai es">
+            <div class="filho" id="e1">1</div>
+            <div class="filho" id="e2">1</div>
+            <div class="filho" id="e3">1</div>
+        </div>
+
+        <div class="pai dir">
+            <div class="filho" id="d1">1</div>
+            <div class="filho" id="d2">1</div>
+            <div class="filho" id="d3">1</div>
+        </div>
+    </div>
+</body>
+</html>
